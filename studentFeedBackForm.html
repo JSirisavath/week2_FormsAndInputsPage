@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Feedback Site</title>
+
+    <!-- Bootstrap Styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!--google font - Noto Sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Google font - Anton -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles CSS -->
+
+    <link rel="stylesheet" href="feedback-styles.css" type="text/css"
+  </head>
+
+  <!-- margin size 3 for the body page (From Bootstrap)-->
+  <body class="m-3">
+    <!-- Jumbotron element from Bootstrap -->
+
+    <div class="jumbotron header">
+      <h1>Please provide your feedback! You may do so anonymous. Thanks!!!</h1>
+    </div>
+
+    <div class="row">
+      <!-- Column for form instruction -->
+      <div class="col-md-5">
+        <!-- Form instruction  -->
+        <div class="instructions m-3">
+          <h6>
+            As one of our students, your thoughts, comments, suggestion is
+            valuable to us! We want to grow and improve in anyway to help and
+            achieve our students' vision!
+          </h6>
+
+          <br />
+          <h6>Please use this form to send us your feedback.</h6>
+          <br />
+          <h6>
+            If you like to receive a response and ask any questions, please
+            include your contact information!
+          </h6>
+        </div>
+      </div>
+      <!-- End of div col for information -->
+
+      <!-- ///////////////////////////////// -->
+
+      <!-- div col for form fill out -->
+      <div class="col-md-7">
+        <!-- Form Input for Students -->
+        <!-- Form margin sz 5 left and right  -->
+        <form class="ml-5 mr-5">
+          <div>
+            <!-- Name text input -->
+            <label for="studentName">Name:</label>
+
+            <!-- Student name input -->
+            <input id="studentName" class="form-control" type="text" />
+
+            <br />
+
+            <!-- ///////////////////////////////// -->
+            <!-- Email label -->
+            <label for="studentEmail">Email:</label>
+
+            <!-- student Email input -->
+            <input id="studentEmail" class="form-control" type="email" />
+
+            <br />
+            <!-- ///////////////////////////////// -->
+            <!-- Student comments label -->
+
+            <label for="studentComments">Comments:</label>
+            <br />
+
+            <!-- Comment text area -->
+            <textarea
+              id="comments"
+              class="form-control"
+              required
+              cols="30"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <!-- ///////////////////////////////// -->
+          <br />
+          <!-- Current student choice Question Label -->
+          <p class="form-text">Are you a current student?</p>
+
+          <!-- Radio buttons choice pair if student or naw -->
+          <!-- Yes -->
+          <div class="form-check">
+            <input
+              name="currentStudentChoiceRadio"
+              type="radio"
+              id="yes"
+              class="form-check-input"
+              checked
+            />
+            <label for="studentCheck" class="form-check-label">Yes</label>
+          </div>
+
+          <!-- ///////////////////////////////// -->
+          <!-- No -->
+          <div class="form-check">
+            <input
+              name="currentStudentChoiceRadio"
+              type="radio"
+              id="no"
+              class="form-check-input"
+            />
+            <label for="notStudentCheck" class="form-check-label">No</label>
+          </div>
+
+          <!-- ///////////////////////////////// -->
+
+          <!-- Submit button -->
+          <input type="submit" class="btn btn-secondary btn-lg mt-4" />
+        </form>
+        <!-- End of form control element
+       -->
+
+        <!-- End of div col for form  -->
+      </div>
+
+      <!-- End of div row for devices -->
+    </div>
+  </body>
+</html>
